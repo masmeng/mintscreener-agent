@@ -1,0 +1,87 @@
+=== zkVerify Agent Games — Wildcard Track: free-mint screener, LIVE RUN ===
+run started: 2026-11-17 23:55:38 WIB  /  2026-11-17 16:55:38 UTC
+python: Python 3.12.3  web3: 8.0.0
+
+$ python derive_tokens.py
+chain_id=56 via bsc-dataseed.binance.org
+
+WOJAGENT mint tx 0x0a35deb24d0ddc7b8ad40b7e1d200964d0b82008858b2a16d87bce921acbd04e status=1 block=133984429
+  Transfer -> user: token=0x62EC413381B74387b57F1E2734cdd2E5b96a57B7 amount_raw=41175000000000000000000000
+
+WNO mint tx 0x76cdfb68142a2fb8cef7b2137f417b9954b63ce569c4831490b3d4960a2d8691 status=1 block=133988010
+  Transfer -> user: token=0x8C969a4CD49E4774908e667702C3d7C3ece164D0 amount_raw=1000000000000000000000000
+
+NEBULA mint tx 0xaf82e2567c1151f12cabfb545011e7a35a767da23cefd18919befc6ddd90f232 status=1 block=133988031
+  Transfer -> user: token=0xF08aC9C91dCfC5B74eAE6c87E744CfEFE0d32A68 amount_raw=1000000000000000000000
+
+Derived token contracts:
+{
+  "WOJAGENT": "0x62EC413381B74387b57F1E2734cdd2E5b96a57B7",
+  "WNO": "0x8C969a4CD49E4774908e667702C3d7C3ece164D0",
+  "NEBULA": "0xF08aC9C91dCfC5B74eAE6c87E744CfEFE0d32A68"
+}
+
+$ python screen_mint.py --watchlist watchlist.json
+== PXIO  0x870aD5f304871eC0c63BE1e976406e0b095A32CD  (via https://bsc.publicnode.com) ==
+[1] identity: name='PXIO' symbol='PXIO' decimals=18 totalSupply=1000000000
+[2] V2 pair vs WBNB: NONE (getPair returned 0x000...0)
+[3] V3 pool 0xb99d2C287631326B3994EE80Ec3D851c36396f76 (USDT/PXIO) tick=92058 liquidity=5002002504091440580465291
+    price: 1 USDT = 9950.606642552333127112668385 PXIO (1 PXIO = 0.0001004963853885696105074526643 USDT)
+VERDICT: BUYER PROOF — live V3 pool 0xb99d2C287631326B3994EE80Ec3D851c36396f76 with liquidity 5002002504091440580465291 and a computable price (1 USDT = 9950.606642552333127112668385 PXIO (1 PXIO = 0.0001004963853885696105074526643 USDT)). A pool exists — this is buyer proof, NOT a guaranteed sell price.
+
+== AMNT  0x2d07B9CcDF5FCdbE26167358B94eeb4c9E995e4E  (via https://bsc.publicnode.com) ==
+[1] identity: name='Agent Mining' symbol='AMNT' decimals=8 totalSupply=1348665000
+[2] V2 pair vs WBNB: NONE (getPair returned 0x000...0)
+[3] V3 pool: not given (pass --v3 <pool> to check one)
+VERDICT: WATCH — no PancakeSwap V2 pair vs WBNB and no live V3 pool checked. No buyers yet — do not mint for resale.
+
+== OVF  0xB3696718E4716f248846AAB962EF2db19AAe76eC  (via https://bsc.publicnode.com) ==
+[1] identity: name='OVREK' symbol='OVF' decimals=18 totalSupply=50000000000
+[2] V2 pair vs WBNB: NONE (getPair returned 0x000...0)
+[3] V3 pool: not given (pass --v3 <pool> to check one)
+VERDICT: WATCH — no PancakeSwap V2 pair vs WBNB and no live V3 pool checked. No buyers yet — do not mint for resale.
+
+== CTX  0x9E1A59c0e073B12E0546f1321eA4cb5A51C71b88  (via https://bsc.publicnode.com) ==
+[1] identity: name='Contextgraph' symbol='CTX' decimals=18 totalSupply=10000000000
+[2] V2 pair vs WBNB: NONE (getPair returned 0x000...0)
+[3] V3 pool: not given (pass --v3 <pool> to check one)
+VERDICT: WATCH — no PancakeSwap V2 pair vs WBNB and no live V3 pool checked. No buyers yet — do not mint for resale.
+
+== WOJAGENT  0x62EC413381B74387b57F1E2734cdd2E5b96a57B7  (via https://bsc.publicnode.com) ==
+[1] identity: name='Wojak Agent' symbol='WOJAGENT' decimals=18 totalSupply=1000000000000
+[2] V2 pair vs WBNB: NONE (getPair returned 0x000...0)
+[3] V3 pool: not given (pass --v3 <pool> to check one)
+VERDICT: WATCH — no PancakeSwap V2 pair vs WBNB and no live V3 pool checked. No buyers yet — do not mint for resale.
+
+== WNO  0x8C969a4CD49E4774908e667702C3d7C3ece164D0  (via https://bsc.publicnode.com) ==
+[1] identity: name='War Need Over' symbol='WNO' decimals=18 totalSupply=6000000000
+[2] V2 pair vs WBNB: NONE (getPair returned 0x000...0)
+[3] V3 pool: not given (pass --v3 <pool> to check one)
+VERDICT: WATCH — no PancakeSwap V2 pair vs WBNB and no live V3 pool checked. No buyers yet — do not mint for resale.
+
+== NEBULA  0xF08aC9C91dCfC5B74eAE6c87E744CfEFE0d32A68  (via https://bsc.publicnode.com) ==
+[1] identity: name='NEBULA' symbol='NEB' decimals=18 totalSupply=3936600
+[2] V2 pair vs WBNB: NONE (getPair returned 0x000...0)
+[3] V3 pool: not given (pass --v3 <pool> to check one)
+VERDICT: WATCH — no PancakeSwap V2 pair vs WBNB and no live V3 pool checked. No buyers yet — do not mint for resale.
+
+SUMMARY: BUYER PROOF=1, WATCH=6  (n=7, 2026-11-17 16:55:43 UTC)
+Read-only: no keys, no transactions, no writes. A paper price is not cash — reserves are buyer proof only.
+
+$ python nft_check.py --holdings nft_holdings.json
+== WiseOwlSociety  0x1cf9e60218493149ACe7DC953497c07175aa625e ==
+  slug=wise-owl-society items=4168 floor=0.00031 BNB (~$0.18114850000000002) totalVolume=0.019594999999999998 BNB
+  VERDICT: SOLD BEFORE — totalVolume 0.019594999999999998 BNB — at least one real sale happened
+== ClafEye  0x1c759C4e075103b5B250DB5114B832b17B99C456 ==
+  slug=claf items=7207 floor=0.0001188 BNB (~$0.06942078) totalVolume=0.0 BNB
+  VERDICT: LISTED, NEVER SOLD — floor 0.0001188 BNB is only the cheapest ask; totalVolume 0 means nobody has paid it
+== OvrekFaces  0x8653B09bDaD22c99915910962167F132E514331F ==
+  slug=foundry-faces items=2187 floor=0.0015 BNB (~$0.876525) totalVolume=0.0 BNB
+  VERDICT: LISTED, NEVER SOLD — floor 0.0015 BNB is only the cheapest ask; totalVolume 0 means nobody has paid it
+== SidecooPass  0xf3f0F05EbEB73543F569369DF5Dc29c0f0418f99 ==
+  slug=sidecoo-agent-pass items=9819 floor=6.98e-06 BNB (~$0.004078763) totalVolume=0.0 BNB
+  VERDICT: LISTED, NEVER SOLD — floor 6.98e-06 BNB is only the cheapest ask; totalVolume 0 means nobody has paid it
+SUMMARY: LISTED, NEVER SOLD=3, SOLD BEFORE=1  (n=4)
+Read-only: no keys, no transactions. A floor is an ask, not a sale.
+
+run finished: 2026-11-17 23:57:20 WIB
